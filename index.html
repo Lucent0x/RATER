@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>RATE CALCULATOR</title>
+</head>
+<body>
+    <div class="nav mt-5 mb-5">
+        <div class="bsc"><img src="./bnb-logo.png" alt=""> <span id="bnb">  </span></div>
+       <div class="eth"> <img src="ethereum-logo.png" alt=""> <span id="eth">  </span></div>
+       <div class="polygon"> <img src="matic-logo.png" alt=""> <span id="matic"> </span> </div>
+    </div>
+    <div class="container mt-5">
+        <form action="#">
+                <input type="text" id="crowdsale"  class="input" value="" required placeholder="Token Crowsale Price" />
+    
+                <input type="text" id="decimal" class="input" value="" required placeholder="Token Decimal" />
+            
+               <select name="" id="network" class="input">
+                <option value="NETWORK">NETWORK</option>
+                <option type="" value="BSC">BSC</option>
+                <option value="ETHEREUM">ETHEREUM</option>
+                <option value="POLYGON">POLYGON</option>
+               </select>
+        
+                <input class="button is-primary is-responsice" type="submit" id="btn" value="CALCULATE RATE" />
+          
+        </form>
+        <div class="result"></div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
